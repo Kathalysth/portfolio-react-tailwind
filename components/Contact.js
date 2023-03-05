@@ -54,13 +54,13 @@ function Contact() {
               Contact Me
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-gray-200">
-              Have a Project in Mind? Let's Build Something Great Together!
+              Have a Project in Mind? Lets Build Something Great Together!
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
               I am excited to hear from you and discuss how we can collaborate
               to bring your ideas to life. Whether you have a question about my
               skills or want to start a new project, feel free to reach out to
-              me anytime. Let's work together to create something truly
+              me anytime. Lets work together to create something truly
               remarkable!
             </p>
           </div>
