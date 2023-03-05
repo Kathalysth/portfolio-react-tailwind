@@ -1,20 +1,18 @@
 export const RESOURCES = [
-  { name: "Industries and tools", link: "#" },
-  { name: "Use cases", link: "#" },
+  { name: "Figma", link: "#" },
   { name: "Blog", link: "#" },
   { name: "Newsletter", link: "#" },
   { name: "Contact Us", link: "#" },
 ];
 export const COMPANY = [
-  { name: "Diversity & inclusion", link: "#" },
+  { name: "Medium", link: "#" },
   { name: "About us", link: "#" },
-  { name: "Press", link: "#" },
-  { name: "Customer Stories", link: "#" },
-  { name: "Online communities", link: "#" },
+  { name: "StackOverflow", link: "#" },
+  { name: "Educative", link: "#" },
 ];
 export const SUPPORT = [
-  { name: "CodePen", link: "#" },
-  { name: "HackerRanker", link: "#" },
-  { name: "LeetCode", link: "#" },
+  { name: "CodePen", link: "https://codepen.io/kathalysth" },
+  { name: "HackerRanker", link: "https://www.hackerrank.com/bishopsirhchris" },
+  { name: "LeetCode", link: "https://leetcode.com/bishopsirhchris/" },
   { name: "Discord", link: "#" },
 ];

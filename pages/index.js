@@ -7,6 +7,7 @@ import { motion, useScroll } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About from "../components/About";
+import { ScrollToTop } from "../components/Scroll";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer/Footer";
@@ -59,6 +60,7 @@ export default function Home() {
           <Contact />
         </main>
         <Footer />
+        <ScrollToTop />
       </div>
     </>
   );

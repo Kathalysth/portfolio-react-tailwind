@@ -64,7 +64,7 @@ function Contact() {
               remarkable!
             </p>
           </div>
-          <div className="w-full flex justify-center items-center">
+          <div className="w-full mt-8 flex justify-center items-center">
             <form
               //   data-aos="fade-up-left"
               //   data-aos-once="true"
@@ -73,78 +73,82 @@ function Contact() {
                 e.preventDefault();
                 handleFormSubmit();
               }}
-              className="w-full md:w-3/5 flex flex-wrap gap-1 justify-center"
+              className="w-full md:w-3/5 flex flex-col gap-4 justify-center"
             >
-              <div className="w-full md:w-6/12 flex flex-col mb-4">
-                <label
-                  className="mb-2 text-gray dark:text-white"
-                  htmlFor="name"
-                >
-                  Name
-                </label>
-                <input
-                  required
-                  title="Name"
-                  name="name"
-                  value={nameValue}
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="Enter Name"
-                  className="p-2 text-gray border-solid border-gray-600 border-2 rounded bg-white dark:text-white dark:bg-gray-700 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
-                />
+              <div className="w-full flex flex-col md:flex-row gap-4">
+                <div className="w-full md:w-6/12 flex flex-col mb-4">
+                  <label
+                    className="mb-2 text-gray dark:text-white"
+                    htmlFor="name"
+                  >
+                    Name
+                  </label>
+                  <input
+                    required
+                    title="Name"
+                    name="name"
+                    value={nameValue}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Enter Name"
+                    className="p-2 text-gray border-solid border-gray-600 border-2 rounded bg-white dark:text-white dark:bg-gray-700 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
+                  />
+                </div>
+                <div className="w-full md:w-6/12 flex flex-col mb-4">
+                  <label
+                    className="mb-2 text-gray dark:text-white"
+                    htmlFor="email"
+                  >
+                    Company (Optional)
+                  </label>
+                  <input
+                    required
+                    title="Company"
+                    type="text"
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
+                    name="company"
+                    placeholder="Your Company"
+                    className="p-2 text-gray border-solid border-gray-600 border-2 rounded bg-white dark:text-white dark:bg-gray-700 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
+                  />
+                </div>
               </div>
-              <div className="w-full md:w-6/12 flex flex-col mb-4">
-                <label
-                  className="mb-2 text-gray dark:text-white"
-                  htmlFor="email"
-                >
-                  Company (Optional)
-                </label>
-                <input
-                  required
-                  title="Company"
-                  type="text"
-                  value={company}
-                  onChange={(e) => setCompany(e.target.value)}
-                  name="company"
-                  placeholder="Your Company"
-                  className="p-2 text-gray border-solid border-gray-600 border-2 rounded bg-white dark:text-white dark:bg-gray-700 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
-                />
-              </div>
-              <div className="w-full md:w-5/12 flex flex-col mb-4">
-                <label
-                  className="mb-2 text-gray dark:text-white"
-                  htmlFor="email"
-                >
-                  Email
-                </label>
-                <input
-                  required
-                  title="Email"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  name="email"
-                  placeholder="web@example.com"
-                  className="p-2 text-gray border-solid border-gray-600 border-2 rounded bg-white dark:text-white dark:bg-gray-700 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
-                />
-              </div>
-              <div className="w-full md:w-5/12 flex flex-col mb-4">
-                <label
-                  className="mb-2 text-gray dark:text-white"
-                  htmlFor="email"
-                >
-                  Phone
-                </label>
-                <input
-                  required
-                  title="Phone"
-                  type="tel"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  name="phone"
-                  placeholder="(234)-4454-233"
-                  className="p-2 text-gray border-solid border-gray-600 border-2 rounded bg-white dark:text-white dark:bg-gray-700 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
-                />
+              <div className="w-full flex flex-col md:flex-row gap-4">
+                <div className="w-full md:w-6/12 flex flex-col mb-4">
+                  <label
+                    className="mb-2 text-gray dark:text-white"
+                    htmlFor="email"
+                  >
+                    Email
+                  </label>
+                  <input
+                    required
+                    title="Email"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    name="email"
+                    placeholder="web@example.com"
+                    className="p-2 text-gray border-solid border-gray-600 border-2 rounded bg-white dark:text-white dark:bg-gray-700 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
+                  />
+                </div>
+                <div className="w-full md:w-6/12 flex flex-col mb-4">
+                  <label
+                    className="mb-2 text-gray dark:text-white"
+                    htmlFor="email"
+                  >
+                    Phone
+                  </label>
+                  <input
+                    required
+                    title="Phone"
+                    type="tel"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    name="phone"
+                    placeholder="(234)-4454-233"
+                    className="p-2 text-gray border-solid border-gray-600 border-2 rounded bg-white dark:text-white dark:bg-gray-700 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
+                  />
+                </div>
               </div>
               <div className="w-full flex flex-col mb-4">
                 <label

@@ -66,6 +66,48 @@ export default function Skills({ dark }) {
             src={`/app-screenshot-${dark ? "light" : "dark"}.png`}
             alt=""
           />
+          <div className="bg-white dark:bg-gray-900 mx-auto mt-8 md:mt-16 max-w-7xl px-6 lg:px-8">
+            <h2 className="text-center text-lg font-semibold leading-8 text-gray-900 dark:text-gray-200">
+              Few of my popular tools.
+            </h2>
+            <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+              <img
+                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                src="/svg/react-javascript-js-framework-facebook-svgrepo-com.svg"
+                alt="React"
+                width={158}
+                height={48}
+              />
+              <img
+                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                src="/svg/javascript-svgrepo-com.svg"
+                alt="Javascript"
+                width={158}
+                height={48}
+              />
+              <img
+                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                src="/svg/typescript-official-svgrepo-com.svg"
+                alt="Typescript"
+                width={158}
+                height={48}
+              />
+              <img
+                className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+                src="/svg/docker-svgrepo-com.svg"
+                alt="Docker"
+                width={158}
+                height={48}
+              />
+              <img
+                className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+                src="svg/nodejs-icon-svgrepo-com (1).svg"
+                alt="Node"
+                width={158}
+                height={48}
+              />
+            </div>
+          </div>
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
