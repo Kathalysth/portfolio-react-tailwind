@@ -15,7 +15,7 @@ const ItemsContainer = () => {
             className="h-5 w-5 flex-none text-gray-500 dark:text-gray-200"
             aria-hidden="true"
           />
-          ambyehgimetor@gmail.com
+          ambyehigimetor@gmail.com
         </div>
         <div className="mt-1 flex  items-center gap-2 font-medium text-gray-500 dark:text-gray-200">
           <MapPinIcon
