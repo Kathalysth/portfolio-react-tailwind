@@ -15,7 +15,7 @@ const Projects = ({ project, number }) => {
           src={project.background.src}
           alt=""
         />
-        <div className="flex flex-col justify-start p-6 md:p-8 w-1/2 bg-slate-50">
+        <div className="flex flex-col justify-start p-6 md:p-8 md:w-1/2 w-full bg-slate-50">
           <h5 className="mb-2 text-xl font-bold text-neutral-800 dark:text-neutral-50">
             {project.title}
           </h5>
