@@ -1,6 +1,7 @@
 import sims from "./public/student_dashboard_desktop.PNG";
 import afm from "./public/afm_home.PNG";
 import biria from "./public/biria_school_landing.PNG";
+import plc from "./public/Pearlawcorporate-screenshot.PNG";
 
 export const projects = [
   {
@@ -25,5 +26,11 @@ export const projects = [
     background: biria,
     stack: ["React", "Node.js", "MongoDB"],
     description: `This software is for a high school management system`,
+  },
+  {
+    title: "Pearlaw Corporate",
+    background: plc,
+    stack: ["NextJS"],
+    description: `Static Webpage for a virtual law firm.`,
   },
 ];
