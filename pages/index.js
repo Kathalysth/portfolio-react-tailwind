@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 import About from "../components/About";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
