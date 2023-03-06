@@ -30,7 +30,7 @@ const Projects = ({ project, number }) => {
             </div>
           </div>
         </div>
-        <div className="bg-slate-200 dark:bg-gray-800/[0.8] p-3 flex items-center justify-between transition hover:bg-teal-500 cursor-pointer">
+        <div className="bg-slate-200 dark:bg-gray-800/[0.8] dark:hover:bg-teal-500 p-3 flex items-center justify-between transition hover:bg-teal-500 cursor-pointer">
           View Project
           <ChevronRightIcon className="h-6 w-6" aria-hidden="true" />
         </div>

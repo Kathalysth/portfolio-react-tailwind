@@ -114,7 +114,11 @@ function Navbar({ dark, setDark }) {
         </div>
       </nav>
       <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-        <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-white dark:bg-gray-900 px-6 py-6 lg:hidden">
+        <Dialog.Panel
+          className={`${
+            dark ? "dark" : ""
+          } fixed inset-0 z-10 overflow-y-auto bg-gray-300 dark:bg-gray-900 px-6 py-6 lg:hidden`}
+        >
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Chris Ehigimetor</span>
@@ -127,7 +131,7 @@ function Navbar({ dark, setDark }) {
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon
-                className="h-6 w-6 stroke-gray-300"
+                className="h-6 w-6 stroke-gray-800"
                 aria-hidden="true"
               />
             </button>
