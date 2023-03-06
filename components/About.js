@@ -79,7 +79,7 @@ function About() {
                   </p>
                   <div className="mt-4 flex justify-center gap-4 p-2 rounded-xl dark:bg-gray-800/[0.8] text-gray-300 bg-slate-100/[0.5]">
                     <a
-                      className="hover:text-blue-500 dark:hover:bg-white  "
+                      className="hover:text-blue-500 dark:hover:bg-white !duration-100  "
                       href="https://twitter.com/bishopsirhchris"
                       target="_blank"
                       rel="noreferrer"

@@ -8,7 +8,7 @@ const Footer = () => {
       <ItemsContainer />
       <div
         className="flex flex-col justify-center items-center gap-10
-      text-center  text-gray-400 text-sm p-12 border-t-solid border-t-gray-700 border-t"
+      text-center  text-gray-400 text-sm p-12 border-t-solid border-t-gray-500 dark:border-t-gray-500 border-t"
       >
         <Socials />
         <span>© 2023 Chris Ehigimetor. All rights reserved.</span>

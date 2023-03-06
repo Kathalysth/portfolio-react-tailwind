@@ -1,7 +1,7 @@
-import sims from "./public/student_dashboard_desktop.PNG";
-import afm from "./public/afm_home.PNG";
+import sims from "./public/cpesim-mock.jpg";
+import afm from "./public/afm-mock.jpg";
 import biria from "./public/biria_school_landing.PNG";
-import plc from "./public/Pearlawcorporate-screenshot.PNG";
+import plc from "./public/pearlaw-mock.jpg";
 
 export const projects = [
   {

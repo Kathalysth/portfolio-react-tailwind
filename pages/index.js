@@ -1,8 +1,6 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import { projects } from "../projects";
 import { motion, useScroll } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,6 +10,7 @@ import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Footer/Navbar";
+import Project from "../components/Project";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -67,23 +66,7 @@ export default function Home() {
         <main className="px-4 dark:bg-gray-900 md:px-10 lg:px-30">
           <About />
           <Skills dark={darkMode} />
-
-          <section className="py-10">
-            <div>
-              <h3 className="text-3xl py-1 dark:text-white font-bold ">
-                Projects
-              </h3>
-            </div>
-            <div className="flex flex-col gap-4 justify-center py-10">
-              {projects.map((project, index) => (
-                <Projects
-                  key={`${project.title}-${index}`}
-                  project={project}
-                  number={index + 1}
-                />
-              ))}
-            </div>
-          </section>
+          <Project />
           <Contact />
         </main>
         <Footer />
