@@ -1,10 +1,13 @@
 import React from "react";
+import CircleShape from "../CircleShape";
+import PatternShape from "../PatternShape";
 import ItemsContainer from "./ItemsContainer";
 import Socials from "./Socials";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-200 dark:bg-gray-700 dark:text-white text-gray-200">
+    <footer className="relative overflow-hidden bg-slate-200 dark:bg-gray-700 dark:text-white text-gray-200">
+      <PatternShape />
       <ItemsContainer />
       <div
         className="flex flex-col justify-center items-center gap-10
@@ -13,6 +16,7 @@ const Footer = () => {
         <Socials />
         <span>© 2023 Chris Ehigimetor. All rights reserved.</span>
       </div>
+      <CircleShape />
     </footer>
   );
 };

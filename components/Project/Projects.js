@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PatternShape from "../PatternShape";
 const Projects = ({ project, number }) => {
   return (
     <div className="flex justify-center ">
@@ -10,7 +11,8 @@ const Projects = ({ project, number }) => {
             alt=""
           />
         ) : null}
-        <div className="flex flex-col justify-start p-6 md:p-8 md:w-1/2 w-full bg-slate-200/[0.6] dark:bg-gray-800/[0.8]">
+        <div className="flex relative flex-col justify-start p-6 md:p-8 md:w-1/2 w-full bg-slate-200/[0.6] dark:bg-gray-800/[0.8]">
+          <PatternShape />
           <h5 className="mb-2 text-xl font-bold text-neutral-800 dark:text-gray-200">
             {project.title}
           </h5>

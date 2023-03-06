@@ -68,9 +68,7 @@ function About() {
                     className="dark:text-white leading-6 text-justify"
                   >
                     Looking to collaborate on a project or simply chat about
-                    software engineering? Let&apos;s connect! You can find me
-                    coding away at my desk, tinkering with new technologies, or
-                    exploring the great outdoors. Whether you&apos;re a fellow
+                    software engineering? Whether you&apos;re a fellow
                     developer, a business owner, or just someone who shares my
                     passion for technology, I&apos;m always eager to meet new
                     people and learn from their experiences. So, let&apos;s grab

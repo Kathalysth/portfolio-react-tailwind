@@ -46,7 +46,7 @@ function Contact() {
   const [isLoading, setIsLoading] = useState(false);
   const [messageValue, setMessage] = useState("");
   return (
-    <section className="py-10">
+    <section id="letsTalk" className="py-10">
       <div className="pt-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-2 lg:px-8">
           <div className="mx-auto max-w-5xl lg:text-center">
@@ -68,7 +68,7 @@ function Contact() {
             <form
               //   data-aos="fade-up-left"
               //   data-aos-once="true"
-              id="letsTalk"
+
               onSubmit={(e) => {
                 e.preventDefault();
                 handleFormSubmit();
