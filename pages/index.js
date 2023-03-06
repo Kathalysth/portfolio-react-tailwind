@@ -37,7 +37,7 @@ export default function Home() {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+        <div className="absolute hidden inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
           <svg
             className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
             viewBox="0 0 1155 678"
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
         <Navbar setDark={setDarkMode} dark={darkMode} />
         <Hero />
-        <main className="px-6 dark:bg-gray-900 md:px-10 lg:px-30">
+        <main className="px-4 dark:bg-gray-900 md:px-10 lg:px-30">
           <About />
           <Skills dark={darkMode} />
 

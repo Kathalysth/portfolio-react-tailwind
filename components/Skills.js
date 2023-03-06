@@ -113,10 +113,10 @@ export default function Skills({ dark }) {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-700 dark:text-gray-200 lg:max-w-lg">
               <p>
-                I am a results-driven software engineer with extensive
+                I&apos;m a results-driven software engineer with extensive
                 experience in full-stack development and agile methodologies.
                 Whether its building scalable web applications or developing
-                custom software solutions, I am committed to delivering
+                custom software solutions, I&apos;m committed to delivering
                 high-quality, efficient, and reliable software that meets the
                 needs of clients and end-users. Take a look at my skills to see
                 how I can help you solve complex business challenges and drive
@@ -137,11 +137,12 @@ export default function Skills({ dark }) {
                     </strong>{" "}
                     <ul>
                       <li>
-                        Frontend: HTML, CSS, JavaScript, React,Spring,.Net, Vue
+                        Frontend: HTML5, CSS3, JavaScript, React, Spring, .Net,
+                        Vue
                       </li>
                       <li>Backend: Node.js, Python, C#, Java</li>
                       <li>
-                        Database: MySQL,PostgreSQL, MongoDB, Firebase, AWS
+                        Database: MySQL, PostgreSQL, MongoDB, Firebase, AWS
                       </li>
                     </ul>
                   </span>

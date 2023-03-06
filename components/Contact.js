@@ -48,20 +48,20 @@ function Contact() {
   return (
     <section className="py-10">
       <div className="pt-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-2 lg:px-8">
           <div className="mx-auto max-w-5xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-teal-600">
               Contact Me
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-gray-200">
-              Have a Project in Mind? Lets Build Something Great Together!
+              Have a Project in Mind? Let&apos;s Build Something Great Together!
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
-              I am excited to hear from you and discuss how we can collaborate
-              to bring your ideas to life. Whether you have a question about my
-              skills or want to start a new project, feel free to reach out to
-              me anytime. Lets work together to create something truly
-              remarkable!
+              I&apos;m excited to hear from you and discuss how we can
+              collaborate to bring your ideas to life. Whether you have a
+              question about my skills or want to start a new project, feel free
+              to reach out to me anytime. Let&apos;s work together to create
+              something truly remarkable!
             </p>
           </div>
           <div className="w-full mt-8 flex justify-center items-center">

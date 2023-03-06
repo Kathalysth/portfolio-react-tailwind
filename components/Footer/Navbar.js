@@ -16,7 +16,7 @@ const navigation = [
 function Navbar({ dark, setDark }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <div className="px-6 bg-white/[0.8] dark:bg-gray-900 backdrop-blur z-10 sticky top-0 pt-6 lg:px-8">
+    <header className="px-6 bg-white/[0.8] dark:bg-gray-900 backdrop-blur z-10 sticky top-0 py-4 lg:px-8">
       <nav className="flex items-center justify-between" aria-label="Global">
         <div className="flex lg:flex-1 dark:text-white">
           <a href="#" className="-m-1.5 p-1.5 uppercase">
@@ -146,7 +146,7 @@ function Navbar({ dark, setDark }) {
           </div>
         </Dialog.Panel>
       </Dialog>
-    </div>
+    </header>
   );
 }
 

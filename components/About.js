@@ -11,7 +11,7 @@ function About() {
   return (
     <section id="about" className="min-h-screen">
       <div className="pt-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-2 lg:px-8">
           <div className="mx-auto max-w-5xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-teal-600">
               About Me
@@ -29,7 +29,7 @@ function About() {
                   {` A highly motivated and dedicated software developer with experience in Node.js, React.js, JavaScript, Java, and C#. Possesses strong problem-solving skills and a passion for coding. A quick learner with a strong drive to constantly improve and expand upon existing skills and knowledge. Demonstrates expertise in developing and maintaining high-quality applications, ensuring they meet project requirements and customer expectations. A team player with excellent communication skills, capable of working collaboratively with cross-functional teams to deliver successful projects on time and within budget. Overall, an exceptional software developer who is dedicated to delivering top-notch solutions and continuously improving my craft.`}
                 </p>
               </div>
-              <div className="w-full md:w-1/2 flex flex-col items-start items-start gap-4 pl-8">
+              <div className="w-full md:w-1/2 flex flex-col items-start items-start gap-4 md:pl-8">
                 <div className="mx-auto md:mx-0 flex justify-center relative overflow-hidden">
                   <Image
                     src="/my-portrait.jpg"
@@ -67,10 +67,15 @@ function About() {
                     data-aos-once="true"
                     className="dark:text-white leading-6 text-justify"
                   >
-                    ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                    dui ligula, malesuada vel convallis in, tincidunt ut mi.
-                    Vestibulum sit amet urna placerat, tempor soloa demanium
-                    testi lor Aliq lorem vitae semper tempor.
+                    Looking to collaborate on a project or simply chat about
+                    software engineering? Let&apos;s connect! You can find me
+                    coding away at my desk, tinkering with new technologies, or
+                    exploring the great outdoors. Whether you&apos;re a fellow
+                    developer, a business owner, or just someone who shares my
+                    passion for technology, I&apos;m always eager to meet new
+                    people and learn from their experiences. So, let&apos;s grab
+                    a virtual coffee, share ideas, and build something great
+                    together!
                   </p>
                   <div className="mt-4 flex justify-center gap-4 p-2 rounded-xl dark:bg-gray-800/[0.8] text-gray-300 bg-slate-100/[0.5]">
                     <a
