@@ -9,7 +9,7 @@ import { ScrollToTop } from "../components/Scroll";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Footer/Navbar";
+import Navbar from "../components/Navbar";
 import Project from "../components/Project";
 
 export default function Home() {

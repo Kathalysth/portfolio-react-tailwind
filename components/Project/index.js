@@ -23,14 +23,16 @@ function Project() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-8 justify-center py-10">
-        {projects.map((project, index) => (
-          <Projects
-            key={`${project.title}-${index}`}
-            project={project}
-            number={index + 1}
-          />
-        ))}
+      <div className="flex py-10 md:max-w-4xl mx-auto">
+        <ul className="w-full flex flex-col justify-center gap-8 ">
+          {projects.map((project, index) => (
+            <Projects
+              key={`${project.title}-${index}`}
+              project={project}
+              number={index + 1}
+            />
+          ))}
+        </ul>
       </div>
     </section>
   );

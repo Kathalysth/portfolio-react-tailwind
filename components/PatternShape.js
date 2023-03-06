@@ -2,8 +2,8 @@ import React from "react";
 
 function PatternShape() {
   return (
-    <div class="absolute right-2 top-2" aria-label="shape" name="shape">
-      <span class="sr-only">shape</span>
+    <div className="absolute right-2 top-2" aria-label="shape" name="shape">
+      <span className="sr-only">shape</span>
       <svg
         width="61"
         height="77"
@@ -17,210 +17,210 @@ function PatternShape() {
             cy="1.66667"
             r="1.66667"
             transform="rotate(90 45.0001 1.66667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="16.0001"
             cy="1.66667"
             r="1.66667"
             transform="rotate(90 16.0001 1.66667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="59.0001"
             cy="1.66667"
             r="1.66667"
             transform="rotate(90 59.0001 1.66667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="30.6668"
             cy="1.66667"
             r="1.66667"
             transform="rotate(90 30.6668 1.66667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="1.66683"
             cy="1.66667"
             r="1.66667"
             transform="rotate(90 1.66683 1.66667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="45.0001"
             cy="16.3332"
             r="1.66667"
             transform="rotate(90 45.0001 16.3332)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="16.0001"
             cy="16.3332"
             r="1.66667"
             transform="rotate(90 16.0001 16.3332)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="59.0001"
             cy="16.3332"
             r="1.66667"
             transform="rotate(90 59.0001 16.3332)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="30.6668"
             cy="16.3332"
             r="1.66667"
             transform="rotate(90 30.6668 16.3332)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="1.66683"
             cy="16.3332"
             r="1.66667"
             transform="rotate(90 1.66683 16.3332)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="45.0001"
             cy="31.0002"
             r="1.66667"
             transform="rotate(90 45.0001 31.0002)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="45.0001"
             cy="74.6667"
             r="1.66667"
             transform="rotate(90 45.0001 74.6667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="16.0001"
             cy="31.0002"
             r="1.66667"
             transform="rotate(90 16.0001 31.0002)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="16.0001"
             cy="74.6667"
             r="1.66667"
             transform="rotate(90 16.0001 74.6667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="59.0001"
             cy="31.0002"
             r="1.66667"
             transform="rotate(90 59.0001 31.0002)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="59.0001"
             cy="74.6667"
             r="1.66667"
             transform="rotate(90 59.0001 74.6667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="30.6668"
             cy="31.0002"
             r="1.66667"
             transform="rotate(90 30.6668 31.0002)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="30.6668"
             cy="74.6667"
             r="1.66667"
             transform="rotate(90 30.6668 74.6667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="1.66683"
             cy="31.0002"
             r="1.66667"
             transform="rotate(90 1.66683 31.0002)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="1.66683"
             cy="74.6667"
             r="1.66667"
             transform="rotate(90 1.66683 74.6667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="45.0001"
             cy="45.6667"
             r="1.66667"
             transform="rotate(90 45.0001 45.6667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="16.0001"
             cy="45.6667"
             r="1.66667"
             transform="rotate(90 16.0001 45.6667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="59.0001"
             cy="45.6667"
             r="1.66667"
             transform="rotate(90 59.0001 45.6667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="30.6668"
             cy="45.6667"
             r="1.66667"
             transform="rotate(90 30.6668 45.6667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="1.66683"
             cy="45.6667"
             r="1.66667"
             transform="rotate(90 1.66683 45.6667)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="45.0001"
             cy="60.3332"
             r="1.66667"
             transform="rotate(90 45.0001 60.3332)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="16.0001"
             cy="60.3332"
             r="1.66667"
             transform="rotate(90 16.0001 60.3332)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="59.0001"
             cy="60.3332"
             r="1.66667"
             transform="rotate(90 59.0001 60.3332)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="30.6668"
             cy="60.3332"
             r="1.66667"
             transform="rotate(90 30.6668 60.3332)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
           <circle
             cx="1.66683"
             cy="60.3332"
             r="1.66667"
             transform="rotate(90 1.66683 60.3332)"
-            fill="white"
+            className="dark:fill-white fill-gray-400"
           ></circle>
         </g>
       </svg>
