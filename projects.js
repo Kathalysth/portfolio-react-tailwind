@@ -2,12 +2,23 @@ import sims from "./public/cpesim-mock.jpg";
 import afm from "./public/afm-mock.jpg";
 import biria from "./public/biria_school_landing.PNG";
 import plc from "./public/pearlaw-mock.jpg";
+import ReactIcon from "./public/svg/react-javascript-js-framework-facebook-svgrepo-com.svg";
+import NodeIcon from "./public/svg/nodejs-icon-svgrepo-com (1).svg";
+import MongoDBIcon from "./public/svg/mongodb-svgrepo-com.svg";
+import NextjsICon from "./public/svg/nextjs-icon.svg";
+import MySqlICon from "./public/svg/mysql-logo-svgrepo-com.svg";
+import JavaIcon from "./public/svg/java-svgrepo-com.svg";
 
+const ICON_SIZE = 40;
 export const projects = [
   {
     title: "Apply For Me",
     background: afm,
-    stack: ["React", "Java", "MySQL"],
+    stack: [
+      { icon: <ReactIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+      { icon: <MySqlICon width={ICON_SIZE} height={ICON_SIZE} /> },
+      { icon: <JavaIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+    ],
     description: `A web application that automates the process of Job applications,
     Candidates fill their information and type of jobs they are open to, and the system automatically applies for jobs on their behalf.
     `,
@@ -16,7 +27,11 @@ export const projects = [
   {
     title: "Student Information Management System (PWA)",
     background: sims,
-    stack: ["React", "Node.js", "MongoDB"],
+    stack: [
+      { icon: <ReactIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+      { icon: <NodeIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+      { icon: <MongoDBIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+    ],
     description: `This software automates manual course registration and students' exam grading.
      This software is used by the department of Computer Engineering University of Benin to perform students’ course registration and exam grading.`,
   },
@@ -24,13 +39,17 @@ export const projects = [
   {
     title: "Biria School",
     background: biria,
-    stack: ["React", "Node.js", "MongoDB"],
+    stack: [
+      { icon: <ReactIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+      { icon: <NodeIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+      { icon: <MongoDBIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+    ],
     description: `This software is for a high school management system`,
   },
   {
     title: "Pearlaw Corporate",
     background: plc,
-    stack: ["NextJS"],
+    stack: [{ icon: <NextjsICon width={ICON_SIZE} height={ICON_SIZE} /> }],
     description: `Static Webpage for a virtual law firm.`,
   },
 ];

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import PatternShape from "../PatternShape";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
+import RenderStack from "../RenderStack";
 const Projects = ({ project, number }) => {
   return (
     <li className="bg-slate-100 dark:bg-gray-700/[0.8] w-128 md:h-72 rounded shadow-md flex flex-col md:flex-row card text-gray-900 dark:text-gray-200">
@@ -22,9 +23,7 @@ const Projects = ({ project, number }) => {
             <i className="fas fa-map-marker-alt mr-1 text-gray-dark"></i>
             Soho, London
           </div> */}
-          <span className="text-3xl text-gray-900 dark:text-gray-200">
-            {project.stack[0]}
-          </span>
+          {<RenderStack stacks={project.stack} />}
           <div className="flex items-center mt-4">
             <div className="pr-2 pb-4 md:pb-8 text-xs">
               {project.description}
