@@ -122,11 +122,14 @@ function Navbar({ dark, setDark }) {
             </a>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-400"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              <XMarkIcon
+                className="h-6 w-6 stroke-gray-300"
+                aria-hidden="true"
+              />
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -141,6 +144,23 @@ function Navbar({ dark, setDark }) {
                     {item.name}
                   </a>
                 ))}
+              </div>
+              <div className="py-6 flex gap-4 items-center">
+                Dark Mode
+                <Switch
+                  checked={dark}
+                  onChange={setDark}
+                  className={`${
+                    dark ? "bg-teal-600" : "bg-gray-200"
+                  } relative inline-flex h-6 w-11 items-center rounded-full`}
+                >
+                  <span className="sr-only">Enable notifications</span>
+                  <span
+                    className={`${
+                      dark ? "translate-x-6" : "translate-x-1"
+                    } inline-block h-4 w-4 transform rounded-full bg-white transition`}
+                  />
+                </Switch>
               </div>
             </div>
           </div>
