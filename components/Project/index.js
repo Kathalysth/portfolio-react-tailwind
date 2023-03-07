@@ -3,7 +3,7 @@ import { projects } from "../../projects";
 
 function Project() {
   return (
-    <section id="projects" className="py-10">
+    <section id="projects" className="py-10 px-4 md:px-10 lg:px-30">
       <div className="pt-12 sm:py-32">
         <div className="mx-auto max-w-7xl px-2 lg:px-8">
           <div className="mx-auto max-w-5xl lg:text-center">

@@ -9,7 +9,7 @@ export default function Skills({ dark }) {
   return (
     <section
       id="skills"
-      className="relative isolate overflow-hidden dark:bg-gray-900 px-6 py-8 sm:py-8 lg:overflow-visible lg:px-0"
+      className="relative isolate overflow-hidden dark:bg-gray-900 py-8 sm:py-8 lg:overflow-visible px-4 md:px-10 lg:px-30"
     >
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg

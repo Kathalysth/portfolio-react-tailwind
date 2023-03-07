@@ -9,7 +9,10 @@ function About() {
   const me = "Chris Ehigimetor";
   const role = "Software  Engineer";
   return (
-    <section id="about" className="min-h-screen">
+    <section
+      id="about"
+      className="min-h-screen bg-slate-200 dark:bg-gray-800 px-4 md:px-10 lg:px-30 "
+    >
       <div className="pt-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-2 lg:px-8">
           <div className="mx-auto max-w-5xl lg:text-center">
