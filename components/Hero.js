@@ -68,7 +68,7 @@ export default function Hero() {
                 y2="288"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#14b8a6"></stop>
+                <stop stopColor="#14b8a6"></stop>
                 <stop offset="1" stopColor="#14b8a6" stopOpacity="0"></stop>
               </linearGradient>
               <radialGradient

@@ -46,7 +46,10 @@ function Contact() {
   const [isLoading, setIsLoading] = useState(false);
   const [messageValue, setMessage] = useState("");
   return (
-    <section id="letsTalk" className="py-10 px-4 md:px-10 lg:px-30">
+    <section
+      id="letsTalk"
+      className="relative isolate py-10 px-4 md:px-10 lg:px-30"
+    >
       <div className="pt-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-2 lg:px-8">
           <div className="mx-auto max-w-5xl lg:text-center">
@@ -90,7 +93,7 @@ function Contact() {
                     value={nameValue}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Enter Name"
-                    className="p-2 text-gray border-solid border-gray-600 border-2 rounded bg-white dark:text-white dark:bg-gray-700 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
+                    className="p-2 text-gray border-solid border-slate-200 dark:border-gray-700 border rounded bg-white dark:text-white dark:bg-gray-800 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
                   />
                 </div>
                 <div className="w-full md:w-6/12 flex flex-col mb-4">
@@ -108,7 +111,7 @@ function Contact() {
                     onChange={(e) => setCompany(e.target.value)}
                     name="company"
                     placeholder="Your Company"
-                    className="p-2 text-gray border-solid border-gray-600 border-2 rounded bg-white dark:text-white dark:bg-gray-700 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
+                    className="p-2 text-gray border-solid border-slate-200 dark:border-gray-700 border rounded bg-white dark:text-white dark:bg-gray-800 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
                   />
                 </div>
               </div>
@@ -128,7 +131,7 @@ function Contact() {
                     onChange={(e) => setEmail(e.target.value)}
                     name="email"
                     placeholder="web@example.com"
-                    className="p-2 text-gray border-solid border-gray-600 border-2 rounded bg-white dark:text-white dark:bg-gray-700 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
+                    className="p-2 text-gray border-solid border-slate-200 dark:border-gray-700 border rounded bg-white dark:text-white dark:bg-gray-800 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
                   />
                 </div>
                 <div className="w-full md:w-6/12 flex flex-col mb-4">
@@ -146,7 +149,7 @@ function Contact() {
                     onChange={(e) => setPhone(e.target.value)}
                     name="phone"
                     placeholder="(234)-4454-233"
-                    className="p-2 text-gray border-solid border-gray-600 border-2 rounded bg-white dark:text-white dark:bg-gray-700 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
+                    className="p-2 text-gray border-solid border-slate-200 dark:border-gray-700 border rounded bg-white dark:text-white dark:bg-gray-800 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
                   />
                 </div>
               </div>
@@ -164,7 +167,7 @@ function Contact() {
                   required
                   rows="5"
                   placeholder="Type a message..."
-                  className="resize-none p-2 text-gray border-solid border-gray-600 border-2 rounded bg-white dark:text-white dark:bg-gray-700 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
+                  className="resize-none p-2 text-gray border-solid border-slate-200 dark:border-gray-700 border rounded bg-white dark:text-white dark:bg-gray-800 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
                 />
               </div>
               <div className="w-full">
@@ -178,6 +181,60 @@ function Contact() {
             </form>
           </div>
         </div>
+      </div>
+      <div className="absolute right-0 top-0 -z-[1]">
+        <svg
+          width="238"
+          height="531"
+          viewBox="0 0 238 531"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            opacity="0.3"
+            x="422.819"
+            y="-70.8145"
+            width="196"
+            height="541.607"
+            rx="2"
+            transform="rotate(51.2997 422.819 -70.8145)"
+            fill="url(#paint0_linear_83:2)"
+          ></rect>
+          <rect
+            opacity="0.3"
+            x="426.568"
+            y="144.886"
+            width="59.7544"
+            height="541.607"
+            rx="2"
+            transform="rotate(51.2997 426.568 144.886)"
+            fill="url(#paint1_linear_83:2)"
+          ></rect>
+          <defs>
+            <linearGradient
+              id="paint0_linear_83:2"
+              x1="517.152"
+              y1="-251.373"
+              x2="517.152"
+              y2="459.865"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#16a34a"></stop>
+              <stop offset="1" stopColor="#16a34a" stopOpacity="0"></stop>
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_83:2"
+              x1="455.327"
+              y1="-35.673"
+              x2="455.327"
+              y2="675.565"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#16a34a"></stop>
+              <stop offset="1" stopColor="#16a34a" stopOpacity="0"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
       </div>
     </section>
   );

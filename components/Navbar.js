@@ -4,6 +4,8 @@ import {
   Bars3Icon,
   XMarkIcon,
   ChevronDownIcon,
+  DocumentChartBarIcon,
+  DocumentDuplicateIcon,
 } from "@heroicons/react/24/outline";
 
 const navigation = [
@@ -39,7 +41,7 @@ function Navbar({ dark, setDark }) {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:bg-slate-100/[0.4] hover:text-teal-500 rounded-lg p-2"
+              className="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:bg-slate-200/[0.4] dark:hover:bg-gray-800 dark:hover:text-teal-600 hover:text-teal-500 rounded-lg p-2"
             >
               {item.name}
             </a>
@@ -65,7 +67,7 @@ function Navbar({ dark, setDark }) {
               <Menu.Button className="inline-flex w-full justify-center rounded-md bg-slate-100/[0.8] dark:text-teal-300 dark:bg-gray-800/[0.8] px-4 py-2 text-sm font-medium text-gray-800 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
                 Download Assets
                 <ChevronDownIcon
-                  className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
+                  className="ml-2 -mr-1 h-5 w-5 text-teal-200 hover:text-teal-100"
                   aria-hidden="true"
                 />
               </Menu.Button>
@@ -88,8 +90,12 @@ function Navbar({ dark, setDark }) {
                           active
                             ? "bg-slate-100 text-white"
                             : "text-gray-900 dark:text-gray-200"
-                        } group hover:bg-slate-100 hover:text-teal-500 cursor-pointer flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        } group hover:bg-slate-100 dark:hover:bg-gray-700 hover:text-teal-500 flex gap-5 w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
+                        <DocumentDuplicateIcon
+                          className="h-6 w-6"
+                          aria-hidden="true"
+                        />
                         Download CV PDF
                       </button>
                     )}
@@ -99,10 +105,14 @@ function Navbar({ dark, setDark }) {
                       <button
                         className={`${
                           active
-                            ? "bg-violet-500 text-white"
+                            ? "bg-slate-100 text-white"
                             : "text-gray-900 dark:text-gray-200"
-                        } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        } group hover:bg-slate-100 dark:hover:bg-gray-700 hover:text-teal-500 flex gap-5 w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
+                        <DocumentChartBarIcon
+                          className="h-6 w-6"
+                          aria-hidden="true"
+                        />
                         Download CV Docx
                       </button>
                     )}
