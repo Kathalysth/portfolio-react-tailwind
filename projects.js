@@ -2,12 +2,14 @@ import sims from "./public/cpesim-mock.jpg";
 import afm from "./public/afm-mock.jpg";
 import biria from "./public/biria_school_landing.PNG";
 import plc from "./public/pearlaw-mock.jpg";
+import jaTours from "./public/9jatours.PNG";
 import ReactIcon from "./public/svg/react-javascript-js-framework-facebook-svgrepo-com.svg";
 import NodeIcon from "./public/svg/nodejs-icon-svgrepo-com (1).svg";
 import MongoDBIcon from "./public/svg/mongodb-svgrepo-com.svg";
 import NextjsICon from "./public/svg/nextjs-icon.svg";
 import MySqlICon from "./public/svg/mysql-logo-svgrepo-com.svg";
 import JavaIcon from "./public/svg/java-svgrepo-com.svg";
+import TypeScriptIcon from "./public/svg/typescript-official-svgrepo-com.svg";
 
 const ICON_SIZE = 40;
 export const projects = [
@@ -51,5 +53,14 @@ export const projects = [
     background: plc,
     stack: [{ icon: <NextjsICon width={ICON_SIZE} height={ICON_SIZE} /> }],
     description: `Static Webpage for a virtual law firm.`,
+  },
+  {
+    title: "9jaTours",
+    background: jaTours,
+    stack: [
+      { icon: <TypeScriptIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+      { icon: <ReactIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+    ],
+    description: `Explore amazing locations in nigeria you would love to visit.`,
   },
 ];
