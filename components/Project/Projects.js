@@ -5,13 +5,18 @@ import RenderStack from "../RenderStack";
 const Projects = ({ project, number }) => {
   return (
     <li className="bg-slate-100 dark:bg-gray-700/[0.8] w-128 md:h-72 rounded shadow-md flex flex-col md:flex-row card text-gray-900 dark:text-gray-200">
-      <img
+      <div
         className={`${
           number % 2 === 0 ? "md:order-1" : "md:order-0"
-        } w-full md:w-1/2 h-full rounded-l-sm`}
-        src={project.background.src}
-        alt=""
-      />
+        } w-full md:w-1/2 md:h-full h-64 rounded-l-sm relative`}
+      >
+        <Image
+          src={project.background.src}
+          alt={`${project.title} screenshot`}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
 
       <div className="relative w-full md:w-1/2 flex flex-col">
         <PatternShape />
