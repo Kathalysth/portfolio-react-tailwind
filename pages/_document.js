@@ -4,7 +4,12 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <script defer src={`https://rsms.me/inter/inter.css`} />
+        <meta
+          name="Chris Ehigimetor Portfolio Page"
+          content="As a skilled developer with a passion for clean code, design
+              systems, and innovative solutions, I'm ready to take on your
+              next project."
+        />
       </Head>
       <body>
         <Main />
