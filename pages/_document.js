@@ -4,9 +4,9 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <script defer src={`https://rsms.me/inter/inter.css`} />
       </Head>
-      <body className="font-poppins">
+      <body>
         <Main />
         <NextScript />
       </body>
