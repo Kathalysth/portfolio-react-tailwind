@@ -173,7 +173,7 @@ export default function Hero() {
               data-aos-once="true"
               className=" text-4xl font-bold tracking-tight z-[2] text-gray-900 dark:text-gray-200 sm:text-6xl"
             >
-              Transforming Ideas into Beautiful and Responsive Web{" "}
+              Transforming Ideas into Accessible and Performant Web{" "}
               <span className="bg-teal-600 rounded-xl pb-1 px-1 text-white z-[1]">
                 apps
               </span>
