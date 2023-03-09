@@ -38,6 +38,7 @@ function About() {
                     src="/my-portrait.jpg"
                     className="rounded-xl"
                     objectFit="cover"
+                    alt="My Portrait"
                     width={250}
                     height={250}
                   />
@@ -83,6 +84,7 @@ function About() {
                       className="hover:text-blue-500 dark:hover:bg-white !duration-100  "
                       href="https://twitter.com/bishopsirhchris"
                       target="_blank"
+                      aria-label="Twitter"
                       rel="noreferrer"
                     >
                       <AiFillTwitterCircle size={24} />
@@ -92,6 +94,7 @@ function About() {
                       href="https://www.linkedin.com/in/ambassador-chris-ehigimetor"
                       target="_blank"
                       rel="noreferrer"
+                      aria-label="Linkedin"
                     >
                       <AiFillLinkedin size={24} />
                     </a>
@@ -100,6 +103,7 @@ function About() {
                       href="https://github.com/kathalysth"
                       target="_blank"
                       rel="noreferrer"
+                      aria-label="GitHub"
                     >
                       <AiFillGithub size={24} />
                     </a>

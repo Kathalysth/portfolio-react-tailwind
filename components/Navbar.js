@@ -29,6 +29,7 @@ function Navbar({ dark, setDark }) {
         <div className="flex lg:hidden">
           <button
             type="button"
+            role="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
             onClick={() => setMobileMenuOpen(true)}
           >
@@ -86,6 +87,7 @@ function Navbar({ dark, setDark }) {
                   <Menu.Item>
                     {({ active }) => (
                       <button
+                        role="button"
                         className={`${
                           active
                             ? "bg-slate-100 text-white"
@@ -103,6 +105,7 @@ function Navbar({ dark, setDark }) {
                   <Menu.Item>
                     {({ active }) => (
                       <button
+                        role="button"
                         className={`${
                           active
                             ? "bg-slate-100 text-white"
@@ -136,6 +139,7 @@ function Navbar({ dark, setDark }) {
             </a>
             <button
               type="button"
+              role="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-400"
               onClick={() => setMobileMenuOpen(false)}
             >

@@ -11,6 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.12",
     "@heroicons/react": "^2.0.16",
+    "@next/bundle-analyzer": "^13.2.3",
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
     "firebase": "^9.10.0",
