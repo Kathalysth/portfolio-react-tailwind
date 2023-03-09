@@ -84,7 +84,7 @@ function About() {
                       className="hover:text-blue-500 dark:hover:bg-white !duration-100  "
                       href="https://twitter.com/bishopsirhchris"
                       target="_blank"
-                      aria-label="Twitter"
+                      aria-label="twitter url"
                       rel="noreferrer"
                     >
                       <AiFillTwitterCircle size={24} />
@@ -94,7 +94,7 @@ function About() {
                       href="https://www.linkedin.com/in/ambassador-chris-ehigimetor"
                       target="_blank"
                       rel="noreferrer"
-                      aria-label="Linkedin"
+                      aria-label="linkedin url"
                     >
                       <AiFillLinkedin size={24} />
                     </a>
@@ -103,7 +103,7 @@ function About() {
                       href="https://github.com/kathalysth"
                       target="_blank"
                       rel="noreferrer"
-                      aria-label="GitHub"
+                      aria-label="gitHub url"
                     >
                       <AiFillGithub size={24} />
                     </a>

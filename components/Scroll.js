@@ -32,6 +32,7 @@ export const ScrollToTop = () => {
       <button
         type="button"
         role="button"
+        aria-label="scroll to top"
         onClick={scrollToTop}
         className={`
           ${
