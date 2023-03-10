@@ -3,6 +3,7 @@ import afm from "./public/afm-mock.jpg";
 import biria from "./public/biria_school_landing.PNG";
 import plc from "./public/pearlaw-mock.jpg";
 import jaTours from "./public/9jatours.PNG";
+import appleClone from "./public/apple-clone.PNG";
 import ReactIcon from "./public/svg/react-javascript-js-framework-facebook-svgrepo-com.svg";
 import NodeIcon from "./public/svg/nodejs-icon-svgrepo-com (1).svg";
 import MongoDBIcon from "./public/svg/mongodb-svgrepo-com.svg";
@@ -62,5 +63,14 @@ export const projects = [
       { icon: <ReactIcon width={ICON_SIZE} height={ICON_SIZE} /> },
     ],
     description: `Explore amazing locations in nigeria you would love to visit.`,
+  },
+  {
+    title: "Apple Clone",
+    background: appleClone,
+    stack: [
+      { icon: <TypeScriptIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+      { icon: <ReactIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+    ],
+    description: `Interesting Clone of the Apple website.`,
   },
 ];
