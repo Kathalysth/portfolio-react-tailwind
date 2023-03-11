@@ -1,16 +1,38 @@
 import Head from "next/head";
-import { useState, useEffect } from "react";
-import Hero from "../components/Hero";
+import dynamic from "next/dynamic";
+import { useState, useEffect, Suspense } from "react";
 import { motion, useScroll } from "framer-motion";
+import { ScrollToTop } from "../components/Scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import About from "../components/About";
-import { ScrollToTop } from "../components/Scroll";
-import Skills from "../components/Skills";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navbar";
-import Project from "../components/Project";
+
+const Hero = dynamic(() => import("../components/Hero"), {
+  suspense: true,
+});
+
+const Skills = dynamic(() => import("../components/Skills"), {
+  suspense: true,
+});
+
+const About = dynamic(() => import("../components/About"), {
+  suspense: true,
+});
+
+const Contact = dynamic(() => import("../components/Contact"), {
+  suspense: true,
+});
+
+const Footer = dynamic(() => import("../components/Footer/Footer"), {
+  suspense: true,
+});
+
+const Navbar = dynamic(() => import("../components/Navbar"), {
+  suspense: true,
+});
+
+const Project = dynamic(() => import("../components/Project"), {
+  suspense: true,
+});
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -22,7 +44,14 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <Suspense
+      fallback={
+        <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
+          <span className="animate-pulse bg-teal-500 p-16" />
+          <p className="text-center">Please wait...</p>
+        </div>
+      }
+    >
       <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
@@ -73,6 +102,6 @@ export default function Home() {
         <Footer />
         <ScrollToTop />
       </div>
-    </>
+    </Suspense>
   );
 }
