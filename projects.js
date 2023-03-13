@@ -3,6 +3,7 @@ import afm from "./public/afm-mock.jpg";
 import biria from "./public/biria_school_landing.PNG";
 import plc from "./public/pearlaw-mock.jpg";
 import jaTours from "./public/9jatours.PNG";
+import chessMate from "./public/chess_v4.PNG";
 import appleClone from "./public/apple-clone.PNG";
 import ReactIcon from "./public/svg/react-javascript-js-framework-facebook-svgrepo-com.svg";
 import NodeIcon from "./public/svg/nodejs-icon-svgrepo-com (1).svg";
@@ -72,5 +73,14 @@ export const projects = [
       { icon: <ReactIcon width={ICON_SIZE} height={ICON_SIZE} /> },
     ],
     description: `Interesting Clone of the Apple website.`,
+  },
+  {
+    title: "Chess Mate",
+    background: chessMate,
+    stack: [
+      { icon: <TypeScriptIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+      { icon: <ReactIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+    ],
+    description: `An Awesome chess game built from stratch with react and typescript.`,
   },
 ];
