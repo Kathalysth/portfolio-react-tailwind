@@ -2,7 +2,9 @@ import Image from "next/image";
 import PatternShape from "../PatternShape";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import RenderStack from "../RenderStack";
+import GitHubIcon from "../../public/svg/github-svgrepo-com (2).svg";
 const Projects = ({ project, number }) => {
+  const ICON_SIZE = 40;
   return (
     <li className="bg-slate-100 dark:bg-gray-700/[0.8] w-128 md:h-72 rounded shadow-md flex flex-col md:flex-row card text-gray-900 dark:text-gray-200">
       <div
@@ -34,11 +36,31 @@ const Projects = ({ project, number }) => {
               {project.description}
             </div>
           </div>
+          {project.gitHubUrl ? (
+            <div className="flex items-center mt-4">
+              <a href={project.gitHubUrl} title={`${project.title} codebase`}>
+                <GitHubIcon width={ICON_SIZE} height={ICON_SIZE} />
+              </a>
+            </div>
+          ) : (
+            <small>☹️ GitHub repo is private or unavailabe.</small>
+          )}
         </div>
-        <div className="bg-slate-200 dark:bg-gray-800/[0.8] dark:hover:bg-teal-500 hover:text-white p-3 flex items-center justify-between transition hover:bg-teal-500 cursor-pointer">
-          View Project{" "}
+        <a
+          href={`${project.liveLink ? project.liveLink : "javascript:void(0)"}`}
+          className={`bg-slate-200 dark:bg-gray-800/[0.8] ${
+            project.liveLink
+              ? "hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500  cursor-pointer"
+              : "pointer-events-none"
+          }  p-3 flex items-center justify-between transition `}
+        >
+          {project.liveLink ? (
+            "View Project"
+          ) : (
+            <small>(Live link currently unavailabe ☹️)</small>
+          )}
           <ChevronRightIcon className="h-6 w-6" aria-hidden="true" />
-        </div>
+        </a>
       </div>
     </li>
   );

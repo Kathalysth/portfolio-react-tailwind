@@ -23,6 +23,7 @@ export const projects = [
       { icon: <MySqlICon width={ICON_SIZE} height={ICON_SIZE} /> },
       { icon: <JavaIcon width={ICON_SIZE} height={ICON_SIZE} /> },
     ],
+    gitHubUrl: "https://github.com/workshopapps/applyforme.web",
     description: `A web application that automates the process of Job applications,
     Candidates fill their information and type of jobs they are open to, and the system automatically applies for jobs on their behalf.
     `,
@@ -36,6 +37,7 @@ export const projects = [
       { icon: <NodeIcon width={ICON_SIZE} height={ICON_SIZE} /> },
       { icon: <MongoDBIcon width={ICON_SIZE} height={ICON_SIZE} /> },
     ],
+    gitHubUrl: "",
     description: `This software automates manual course registration and students' exam grading.
      This software is used by the department of Computer Engineering University of Benin to perform students’ course registration and exam grading.`,
   },
@@ -48,12 +50,15 @@ export const projects = [
       { icon: <NodeIcon width={ICON_SIZE} height={ICON_SIZE} /> },
       { icon: <MongoDBIcon width={ICON_SIZE} height={ICON_SIZE} /> },
     ],
+    gitHubUrl: "",
     description: `This software is for a high school management system`,
   },
   {
     title: "Pearlaw Corporate",
     background: plc,
     stack: [{ icon: <NextjsICon width={ICON_SIZE} height={ICON_SIZE} /> }],
+    gitHubUrl: "https://github.com/Kathalysth/plc",
+    liveLink: "https://pearlawcorporate.vercel.app",
     description: `Static Webpage for a virtual law firm.`,
   },
   {
@@ -63,6 +68,8 @@ export const projects = [
       { icon: <TypeScriptIcon width={ICON_SIZE} height={ICON_SIZE} /> },
       { icon: <ReactIcon width={ICON_SIZE} height={ICON_SIZE} /> },
     ],
+    gitHubUrl: "https://github.com/Kathalysth/tourism",
+    liveLink: "https://9jatours.vercel.app",
     description: `Explore amazing locations in nigeria you would love to visit.`,
   },
   {
@@ -72,6 +79,7 @@ export const projects = [
       { icon: <TypeScriptIcon width={ICON_SIZE} height={ICON_SIZE} /> },
       { icon: <ReactIcon width={ICON_SIZE} height={ICON_SIZE} /> },
     ],
+    gitHubUrl: "https://github.com/Kathalysth/apple-clone",
     description: `Interesting Clone of the Apple website.`,
   },
   {
@@ -81,6 +89,7 @@ export const projects = [
       { icon: <TypeScriptIcon width={ICON_SIZE} height={ICON_SIZE} /> },
       { icon: <ReactIcon width={ICON_SIZE} height={ICON_SIZE} /> },
     ],
+    gitHubUrl: "https://github.com/Kathalysth/chess-multiplayer",
     description: `An Awesome chess game built from stratch with react and typescript.`,
   },
 ];
