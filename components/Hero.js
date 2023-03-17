@@ -185,8 +185,8 @@ export default function Hero() {
               className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300"
             >
               As a skilled developer with a passion for clean code, design
-              systems, and innovative solutions, I&apos;m ready to take on your
-              next project.
+              systems, web performance, and innovative solutions, I&apos;m ready
+              to take on your next project.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

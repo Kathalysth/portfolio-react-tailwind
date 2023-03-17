@@ -38,7 +38,11 @@ const Projects = ({ project, number }) => {
           </div>
           {project.gitHubUrl ? (
             <div className="flex items-center mt-4">
-              <a href={project.gitHubUrl} title={`${project.title} codebase`}>
+              <a
+                className="animate-wiggle rounded-full"
+                href={project.gitHubUrl}
+                title={`${project.title} codebase`}
+              >
                 <GitHubIcon width={ICON_SIZE} height={ICON_SIZE} />
               </a>
             </div>
@@ -46,21 +50,23 @@ const Projects = ({ project, number }) => {
             <small>☹️ GitHub repo is private or unavailabe.</small>
           )}
         </div>
-        <a
-          href={`${project.liveLink ? project.liveLink : "javascript:void(0)"}`}
-          className={`bg-slate-200 dark:bg-gray-800/[0.8] ${
-            project.liveLink
-              ? "hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500  cursor-pointer"
-              : "pointer-events-none"
-          }  p-3 flex items-center justify-between transition `}
-        >
-          {project.liveLink ? (
-            "View Project"
-          ) : (
+        {project.liveLink ? (
+          <a
+            href={project.liveLink}
+            className="bg-slate-200 dark:bg-gray-800/[0.8]  p-3 flex items-center justify-between transition hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500  cursor-pointer "
+          >
+            View Project
+            <ChevronRightIcon className="h-6 w-6" aria-hidden="true" />
+          </a>
+        ) : (
+          <button
+            role="button"
+            aria-label="empty link"
+            className="pointer-events-none p-3 transition"
+          >
             <small>(Live link currently unavailabe ☹️)</small>
-          )}
-          <ChevronRightIcon className="h-6 w-6" aria-hidden="true" />
-        </a>
+          </button>
+        )}
       </div>
     </li>
   );

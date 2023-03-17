@@ -79,9 +79,12 @@ function About() {
                     a virtual coffee, share ideas, and build something great
                     together!
                   </p>
-                  <div className="mt-4 flex justify-center gap-4 p-2 rounded-xl dark:bg-gray-800/[0.8] text-gray-300 bg-slate-100/[0.5]">
+                  <div
+                    id="connect"
+                    className="mt-4 flex justify-center gap-4 p-2 rounded-xl dark:bg-gray-700/[0.8] text-gray-300 bg-slate-100/[0.5]"
+                  >
                     <a
-                      className="hover:text-blue-500 dark:hover:bg-white !duration-100  "
+                      className="hover:text-blue-500 dark:rounded-full"
                       href="https://twitter.com/bishopsirhchris"
                       target="_blank"
                       aria-label="twitter url"
@@ -90,7 +93,7 @@ function About() {
                       <AiFillTwitterCircle size={24} />
                     </a>
                     <a
-                      className="hover:text-blue-500 dark:hover:bg-white  "
+                      className="hover:text-blue-500"
                       href="https://www.linkedin.com/in/ambassador-chris-ehigimetor"
                       target="_blank"
                       rel="noreferrer"

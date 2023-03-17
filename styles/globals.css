@@ -26,9 +26,13 @@ a {
   color: inherit;
   text-decoration: none;
   transition-property: background, color;
-  transition-duration: 0.5s;
+  transition-duration: 0.5s, 0.5s;
 }
-
+#connect a {
+  transition: color;
+  transition-duration: 0.05s;
+  transition-timing-function: ease-in;
+}
 main {
   overflow: hidden;
 }

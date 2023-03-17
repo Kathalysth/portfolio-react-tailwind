@@ -86,8 +86,11 @@ function Navbar({ dark, setDark }) {
                 <div className="px-1 py-1 ">
                   <Menu.Item>
                     {({ active }) => (
-                      <button
-                        role="button"
+                      <a
+                        href="https://drive.google.com/file/d/13ZETzbfTEpt1lQqIFTy9YHImbjVxUoY1/view"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="resume url"
                         className={`${
                           active
                             ? "bg-slate-100 text-white"
@@ -99,10 +102,10 @@ function Navbar({ dark, setDark }) {
                           aria-hidden="true"
                         />
                         Download CV PDF
-                      </button>
+                      </a>
                     )}
                   </Menu.Item>
-                  <Menu.Item>
+                  {/* <Menu.Item>
                     {({ active }) => (
                       <button
                         role="button"
@@ -119,7 +122,7 @@ function Navbar({ dark, setDark }) {
                         Download CV Docx
                       </button>
                     )}
-                  </Menu.Item>
+                  </Menu.Item> */}
                 </div>
               </Menu.Items>
             </Transition>

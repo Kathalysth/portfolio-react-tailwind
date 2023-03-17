@@ -79,8 +79,8 @@ export default function Skills({ dark }) {
             <h2 className="text-center text-lg font-semibold leading-8 text-gray-900 dark:text-gray-200">
               Popular Tools.
             </h2>
-            <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-              <div className="col-span-2 max-h-12 w-full lg:col-span-1 relative">
+            <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+              <div className="w-full lg:col-span-1 relative">
                 <Image
                   src="/svg/react-javascript-js-framework-facebook-svgrepo-com.svg"
                   alt="React"
@@ -89,7 +89,7 @@ export default function Skills({ dark }) {
                   height={158}
                 />
               </div>
-              <div className="col-span-2 max-h-12 w-full lg:col-span-1 relative">
+              <div className="w-full lg:col-span-1 relative">
                 <Image
                   src="/svg/javascript-svgrepo-com.svg"
                   alt="Javascript"
@@ -98,7 +98,7 @@ export default function Skills({ dark }) {
                   height={158}
                 />
               </div>
-              <div className="col-span-2 max-h-12 w-full lg:col-span-1 relative">
+              <div className="w-full lg:col-span-1 relative">
                 <Image
                   src="/svg/typescript-official-svgrepo-com.svg"
                   alt="Typescript"
@@ -107,7 +107,7 @@ export default function Skills({ dark }) {
                   height={158}
                 />
               </div>
-              <div className="col-span-2 max-h-12 w-full lg:col-span-1 relative">
+              <div className="w-full lg:col-span-1 relative">
                 <Image
                   src="/svg/docker-svgrepo-com.svg"
                   alt="Docker"
@@ -116,7 +116,7 @@ export default function Skills({ dark }) {
                   height={158}
                 />
               </div>
-              <div className="col-span-2 max-h-12 w-full lg:col-span-1 relative">
+              <div className="w-full lg:col-span-1 relative">
                 <Image
                   src="/svg/nodejs-icon-svgrepo-com (1).svg"
                   alt="Node"
