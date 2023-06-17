@@ -15,7 +15,7 @@ function Contact() {
 
   function handleFormSubmit() {
     setIsLoading(true);
-    fetch("https://formsubmit.co/ajax/ambyehigimetor@gmail.com", {
+    fetch("https://formsubmit.co/ajax/bacf26336034785b315730b1e0850da7", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +23,7 @@ function Contact() {
       },
       body: JSON.stringify({
         name: nameValue,
-        email: email,
+        email,
         subject: `${nameValue} ${
           company ? `from ${company}` : ""
         } Reached out - ${phone ? phone : ""}`,
@@ -36,6 +36,8 @@ function Contact() {
           title: `Thank You, <strong style="text-transform: capitalize;">${nameValue}</strong>!`,
           html: `I appreciate you taking the time to reach out!`,
           icon: "success",
+          confirmButtonText: "Close",
+          confirmButtonColor: "#14b8a6",
         });
         setEmail("");
         setMessage("");
