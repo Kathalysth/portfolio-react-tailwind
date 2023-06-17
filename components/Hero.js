@@ -171,12 +171,12 @@ export default function Hero() {
             <h1
               data-aos="fade-up"
               data-aos-once="true"
-              className=" text-3xl font-bold tracking-tight z-[2] text-gray-900 dark:text-gray-200 md:text-6xl"
+              className=" text-3xl font-bold tracking-snug z-[2] text-gray-900 dark:text-gray-200 md:text-6xl"
             >
               Transforming Ideas into Accessible and Performant Web{" "}
-              <span className="bg-teal-600 rounded-xl pb-1 px-1 text-white z-[1]">
+              <div className="bg-teal-600 rounded-xl inline-block pb-1 px-1 text-white z-[1]">
                 apps
-              </span>
+              </div>
               .
             </h1>
             <p

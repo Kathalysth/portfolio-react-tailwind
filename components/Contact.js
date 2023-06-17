@@ -5,39 +5,6 @@ import Image from "next/image";
 
 const MySwal = withReactContent(Swal);
 
-function handleFormSubmit() {
-  setIsLoading(true);
-  fetch("https://formsubmit.co/ajax/ambyehigimetor@gmail.com", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: JSON.stringify({
-      name: nameValue,
-      email: email,
-      subject: "Reached out from Porfolio",
-      message: messageValue,
-    }),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      MySwal.fire({
-        title: `Thank You, <strong style="text-transform: capitalize;">${nameValue}</strong>!`,
-        html: `I appreciate you taking the time to reach out!`,
-        icon: "success",
-      });
-      setEmail("");
-      setMessage("");
-      setName("");
-      setIsLoading(false);
-    })
-    .catch((error) => {
-      setIsLoading(false);
-      MySwal.fire("Something went wrong!", "Please try again!", "error");
-    });
-}
-
 function Contact() {
   const [nameValue, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -45,6 +12,44 @@ function Contact() {
   const [phone, setPhone] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [messageValue, setMessage] = useState("");
+
+  function handleFormSubmit() {
+    setIsLoading(true);
+    fetch("https://formsubmit.co/ajax/ambyehigimetor@gmail.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        name: nameValue,
+        email: email,
+        subject: `${nameValue} ${
+          company ? `from ${company}` : ""
+        } Reached out - ${phone ? phone : ""}`,
+        message: messageValue,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        MySwal.fire({
+          title: `Thank You, <strong style="text-transform: capitalize;">${nameValue}</strong>!`,
+          html: `I appreciate you taking the time to reach out!`,
+          icon: "success",
+        });
+        setEmail("");
+        setMessage("");
+        setPhone("");
+        setCompany("");
+        setName("");
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        MySwal.fire("Something went wrong!", "Please try again!", "error");
+      });
+  }
+
   return (
     <section
       id="letsTalk"
@@ -104,7 +109,6 @@ function Contact() {
                     Company (Optional)
                   </label>
                   <input
-                    required
                     title="Company"
                     type="text"
                     value={company}
@@ -130,7 +134,7 @@ function Contact() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     name="email"
-                    placeholder="web@example.com"
+                    placeholder="me@mail.com"
                     className="p-2 text-gray border-solid border-slate-200 dark:border-gray-700 border rounded bg-white dark:text-white dark:bg-gray-800 focus:outline outline-teal-500 outline-2 focus:border-teal-500"
                   />
                 </div>
@@ -139,10 +143,9 @@ function Contact() {
                     className="mb-2 text-gray dark:text-white"
                     htmlFor="email"
                   >
-                    Phone
+                    Phone (Optional)
                   </label>
                   <input
-                    required
                     title="Phone"
                     type="tel"
                     value={phone}
@@ -175,7 +178,18 @@ function Contact() {
                   className="bg-teal-500 w-100 block text-white p-2 w-full rounded-lg"
                   disabled={isLoading ? true : false}
                 >
-                  {isLoading ? "...Please Wait" : "Submit"}
+                  {isLoading ? (
+                    <div
+                      className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+                      role="status"
+                    >
+                      <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
+                        Loading...
+                      </span>
+                    </div>
+                  ) : (
+                    "Submit"
+                  )}
                 </button>
               </div>
             </form>
