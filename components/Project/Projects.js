@@ -53,6 +53,7 @@ const Projects = ({ project, number }) => {
         {project.liveLink ? (
           <a
             target="_blank"
+            rel="noreferrer"
             href={project.liveLink}
             className="bg-slate-200 dark:bg-gray-800/[0.8]  p-3 flex items-center justify-between transition hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500  cursor-pointer "
           >
