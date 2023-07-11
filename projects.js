@@ -1,6 +1,7 @@
 import sims from "./public/cpesim-mock.jpg";
 import afm from "./public/afm-mock.jpg";
 import biria from "./public/biria_school_landing.PNG";
+import mysoccer from "./public/mysoccer-ui.PNG";
 import plc from "./public/pearlaw-mock.jpg";
 import jaTours from "./public/9jatours.PNG";
 import chessMate from "./public/chess_v4.PNG";
@@ -40,6 +41,19 @@ export const projects = [
     gitHubUrl: "",
     description: `This software automates manual course registration and students' exam grading.
      This software is used by the department of Computer Engineering University of Benin to perform students’ course registration and exam grading.`,
+  },
+  {
+    title: "MySoccer",
+    background: mysoccer,
+    stack: [
+      { icon: <TypeScriptIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+      { icon: <ReactIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+      { icon: <NodeIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+      { icon: <MongoDBIcon width={ICON_SIZE} height={ICON_SIZE} /> },
+    ],
+    gitHubUrl: "",
+    liveLink: "https://mysoccer.vercel.app",
+    description: `MySoccer is a soccer app for a footballing group where matches, stats and player information are available, it also allows for soccer fantasy mode where players are selected, managed and points are awarded based on player performance.`,
   },
 
   {

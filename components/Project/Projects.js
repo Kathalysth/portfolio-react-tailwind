@@ -47,11 +47,12 @@ const Projects = ({ project, number }) => {
               </a>
             </div>
           ) : (
-            <small>☹️ GitHub repo is private or unavailabe.</small>
+            <small>☹️ GitHub repo is private or unavailable.</small>
           )}
         </div>
         {project.liveLink ? (
           <a
+            target="_blank"
             href={project.liveLink}
             className="bg-slate-200 dark:bg-gray-800/[0.8]  p-3 flex items-center justify-between transition hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500  cursor-pointer "
           >
@@ -64,7 +65,7 @@ const Projects = ({ project, number }) => {
             aria-label="empty link"
             className="pointer-events-none p-3 transition"
           >
-            <small>(Live link currently unavailabe ☹️)</small>
+            <small>(Live link currently unavailable ☹️)</small>
           </button>
         )}
       </div>
