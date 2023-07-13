@@ -1,8 +1,7 @@
 import sims from "./public/cpesim-mock.jpg";
 import afm from "./public/afm-mock.jpg";
-import biria from "./public/biria_school_landing.PNG";
 import mysoccer from "./public/mysoccer-ui.PNG";
-import plc from "./public/pearlaw-mock.jpg";
+import myKitchen from "./public/myKitchen.PNG";
 import jaTours from "./public/9jatours.PNG";
 import chessMate from "./public/chess_v4.PNG";
 import appleClone from "./public/apple-clone.PNG";
@@ -57,23 +56,16 @@ export const projects = [
   },
 
   {
-    title: "Biria School",
-    background: biria,
+    title: "MyKitchen",
+    background: myKitchen,
     stack: [
+      { icon: <TypeScriptIcon width={ICON_SIZE} height={ICON_SIZE} /> },
       { icon: <ReactIcon width={ICON_SIZE} height={ICON_SIZE} /> },
-      { icon: <NodeIcon width={ICON_SIZE} height={ICON_SIZE} /> },
-      { icon: <MongoDBIcon width={ICON_SIZE} height={ICON_SIZE} /> },
     ],
     gitHubUrl: "",
-    description: `This software is for a high school management system`,
-  },
-  {
-    title: "Pearlaw Corporate",
-    background: plc,
-    stack: [{ icon: <NextjsICon width={ICON_SIZE} height={ICON_SIZE} /> }],
-    gitHubUrl: "https://github.com/Kathalysth/plc",
-    liveLink: "https://pearlawcorporate.vercel.app",
-    description: `Static Webpage for a virtual law firm.`,
+    liveLink: "https://e-kitchen-react.vercel.app",
+    description: `Your assistant to culinary adventures!
+Discover the secret to some delectable recipes from around the globe.`,
   },
   {
     title: "9jaTours",
