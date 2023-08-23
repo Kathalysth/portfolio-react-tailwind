@@ -159,6 +159,7 @@ function Navbar({ dark, setDark }) {
                 {navigation.map((item) => (
                   <a
                     key={item.name}
+                    onClick={() => setMobileMenuOpen(false)}
                     href={item.href}
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"
                   >
@@ -170,7 +171,10 @@ function Navbar({ dark, setDark }) {
                 Dark Mode
                 <Switch
                   checked={dark}
-                  onChange={setDark}
+                  onChange={(bool) => {
+                    setDark(bool);
+                    setMobileMenuOpen(false);
+                  }}
                   className={`${
                     dark ? "bg-teal-600" : "bg-gray-200"
                   } relative inline-flex h-6 w-11 items-center rounded-full`}
