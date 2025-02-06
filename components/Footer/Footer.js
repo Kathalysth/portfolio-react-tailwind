@@ -14,7 +14,7 @@ const Footer = () => {
       text-center  text-gray-400 text-sm p-12 border-t-solid border-t-slate-300 dark:border-t-gray-500 border-t"
       >
         <Socials />
-        <span>© 2023 Chris Ehigimetor. All rights reserved.</span>
+        <span>© 2025 Chris Ehigimetor. All rights reserved.</span>
       </div>
       <CircleShape />
     </footer>
